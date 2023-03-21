@@ -1,0 +1,213 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+    <title>Insurance</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-nav" width="100px">
+        <a href="index.html" class="logo">Funded Farmers</a>
+
+        <ul>
+            <li><a href="{% url 'home' %}">home</a></li>
+            <li><a href="{% url 'store' %}">store</a></li>
+            <li><a href="{% url 'logout' %}">logout</a></li>
+        </ul>
+      </div>
+
+      <div class="sub-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="description">
+        <h2 class="heading-secondary">
+          Insurance that we provide
+        </h2>
+        <p>Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme was launched in India by Ministry of Agriculture & Farmers welfare, New Delhi from Kharif 2016 season onwards.
+          <br>
+          This gives farmer a growth by giving insurance to there farms.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">
+            <a href="https://kisansuvidha.gov.in/crop-insurance/premium-calculator"><img src="{% static 'images/calculator.png' %}" alt="Image 1"></a>
+          </div>
+
+          <h3 class="heading-tertiary">Premium Calculator</h3>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <a href="https://kisansuvidha.gov.in/crop-insurance/application-status"><img src="{% static 'images/application.png' %}" alt="Image 2"></a>
+          </div>
+
+          <h3 class="heading-tertiary">Application status</h3>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <a href="https://kisansuvidha.gov.in/crop-insurance/insurance-directory"><img src="{% static 'images/register.png' %}" alt="Image 3"></a>
+          </div>
+
+          <h3 class="heading-tertiary">Insurance Directory</h3>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <a href="https://kisansuvidha.gov.in/crop-insurance/bank-directory"><img src="{% static 'images/application.png' %}" alt="Image 4"></a>
+          </div>
+
+          <h3 class="heading-tertiary">Bank Directory</h3>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <a href="https://kisansuvidha.gov.in/crop-insurance/crop-loss"><img src="{% static 'images/application.png' %}" alt="Image 5"></a>
+          </div>
+
+          <h3 class="heading-tertiary">Crop Loss</h3>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <a href="https://kisansuvidha.gov.in/crop-insurance/apply-online-directory"><img src="{% static 'images/register.png' %}" alt="Image 6"></a>
+          </div>
+
+          <h3 class="heading-tertiary">Apply Insurance</h3>
+        </div>
+      </div>
+
+    </div>
+     <!-- Footer -->
+     <footer class="text-center text-white" style="background-color: #a5d749">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">About us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Help</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-white">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          <!-- Section: Text -->
+          <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p>
+                  We Provide high quality and personalized care taking service of your
+                land and crops with automated tools & machinary.
+                Our aim to help customer to maximum utilisation of their parental agriculture land by hiring a
+                professional from us!
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+    
+          <!-- Section: Social -->
+          <section class="text-center mb-5">
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+  </body>
+</html>
+    
+
+
+

@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-nav" width="100px">
+        <a href="{% url 'home' %}" class="logo">Funded Farmers</a>
+
+        <ul>
+          <li><a href="{% url 'home' %}">home</a></li>
+          <li><a href="{% url 'store' %}">Store</a></li>
+          <li><a href="{% url 'login' %}">Login</a></li>
+          {% if request.user.is_authenticated %}
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="hero">
+        <div class="content">
+          <h1 class="heading-primary">
+            About
+          </h1>
+          <p>
+            We Provide high quality and personalized care taking service of your land and crops with
+            automated tools & machinary.
+            <br>
+            Our aim to help customer to maximum utilisation of their parental agriculture
+            land by hiring a professional from us!
+          </p>
+
+          <a href="{% url 'contact' %}" class="btn">contact now</a>
+        </div>
+
+        <div class="hero-img">
+          <img src="{% static 'images/checking.jpeg' %}" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container" bg-color="white">
+        <div class="description">
+          <h2 class="heading-secondary">
+            Services that we provide
+          </h2>
+          <p>Get several services at just one place like hire care taker of your land & crop, consulting, Buy agriculture products, Insurance of your crop & Get Training from professional farmers !</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <a href="{% url 'land' %}"><img src="{% static 'images/hire.jpg' %}" alt="Image 1"></a>
+            </div>
+            <h3 class="heading-tertiary">Hire Us</h3>
+            <p>
+              Here you can hire a care taker of your agriculture land, who will take care of your land & yield crops.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+            <a href="{% url 'store' %}"><img src="{% static 'images/truck.jpg' %}" alt="Image 2"></a>
+            </div>
+            <h3 class="heading-tertiary">Personalised stores</h3>
+            <p>
+              Here you can buy modern agriculture product including seeds & organic fertilizers.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+            <a href="{% url 'insurance' %}"><img src="{% static 'images/crop-insurance.jpg' %}" alt="Image 3"></a>
+            </div>
+            <h3 class="heading-tertiary">Crop Insurance</h3>
+            <p>
+              Get insurance of your crop under the scheme of "Pradhan Mantri fasal bima Yojna" in just some simple clicks       </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+            <a href="{% url 'training' %}">  <img src="{% static 'images/training.jpeg' %}" alt="Image 4"></a>
+            </div>
+            <h3 class="heading-tertiary">Training</h3>
+            <p>
+              Get training from us to learn modern farming methods and later we will give you employment.            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #a5d749">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Products</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Awards</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Help</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-5" />
+  
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                We Provide high quality and personalized care taking service of your
+                land and crops with automated tools & machinary.
+                Our aim to help customer to maximum utilisation of their parental agriculture land by hiring a
+                professional from us!
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+          
+      
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
